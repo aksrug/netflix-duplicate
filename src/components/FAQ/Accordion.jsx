@@ -10,7 +10,7 @@ const AccordionItem = ({ title, content }) => {
   };
 
   return (
-    <div>
+    <div className="accordion-item">
       <button
         className={`accordion ${isOpen ? "active" : ""}`}
         onClick={toggleAccordion}
@@ -32,7 +32,7 @@ AccordionItem.propTypes = {
 const Accordion = () => {
   return (
     <div>
-      <h1>Frequently Asked Questions</h1>
+      <h1 className="faq-heading">Frequently Asked Questions</h1>
       <AccordionItem
         title="What is Netflix?"
         content="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
@@ -70,5 +70,6 @@ Kids profiles come with PIN-protected parental controls that let you restrict th
     </div>
   );
 };
+
 
 export default Accordion;
