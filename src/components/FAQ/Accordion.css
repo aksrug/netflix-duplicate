@@ -1,23 +1,30 @@
+.accordion-container {
+    background-color: #000; 
+    color: white; 
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
 .faq-heading {
     font-size: 40px;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    color: #333;    /* pakeisti i balta */
+    color: white;   
     margin-left: 100px;
 }
 
 .accordion {
-    background-color: #474646;    
+    background-color: #474646;
     color: white;
     cursor: pointer;
     padding: 45px;
-    width: 100%;
+    width: calc(100% - 40px);
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
     margin-left: 100px;
-    /*margin-right: 20px;*/
+    margin-right: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     font-size: 30px;
@@ -38,7 +45,6 @@
     float: right;
     margin-left: 5px;
     font-size: 30px;    /* Šrifto dydis pliuso/minuso ženklui */
-    width: calc(100% - 40px);
 }
 
 .accordion.active:after {
@@ -47,13 +53,14 @@
 
 .accordion-item {
     margin-bottom: 10px; 
+    width: 70%;
 }
 
 .panel {
     padding: 0 18px;
     background-color: #474646;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    /*transition: max-height 0.2s ease-out;*/
     margin-left: 100px;
     margin-right: 20px;
     box-shadow: 0 2px 5px rgba(43, 42, 42, 0.582);
