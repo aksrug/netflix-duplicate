@@ -7,17 +7,17 @@
 }
 
 .accordion {
-    background-color: #474646;
+    background-color: #474646;    
     color: white;
     cursor: pointer;
-    padding: 30px;
-    width: calc(100% - 40px);
+    padding: 45px;
+    width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
     margin-left: 100px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     font-size: 30px;
@@ -38,6 +38,7 @@
     float: right;
     margin-left: 5px;
     font-size: 30px;    /* Šrifto dydis pliuso/minuso ženklui */
+    width: calc(100% - 40px);
 }
 
 .accordion.active:after {
@@ -58,7 +59,7 @@
     box-shadow: 0 2px 5px rgba(43, 42, 42, 0.582);
     border-radius: 0 0 4px 4px;
     box-sizing: border-box;
-    width: calc(100% - 80px);
+    width: 100%;
     display: none;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
